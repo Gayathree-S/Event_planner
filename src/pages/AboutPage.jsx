@@ -57,7 +57,7 @@ function AboutPage() {
 
         <p style={{ fontSize: "1.15rem", lineHeight: 1.6, marginBottom: 16 }}>
           AI Event Planner is your trusted digital assistant to make event planning effortless and enjoyable.
-          Whether you’re organizing a birthday party, corporate gathering, or intimate occasion, our AI-powered platform generates tailored, detailed plans customized to your preferences.
+          Whether you are organizing a birthday party, corporate gathering, or intimate occasion, our AI-powered platform generates tailored, detailed plans customized to your preferences.
         </p>
 
         <p style={{ fontSize: "1.15rem", lineHeight: 1.6, marginBottom: 16 }}>
