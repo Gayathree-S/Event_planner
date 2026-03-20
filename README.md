@@ -1,12 +1,83 @@
-# React + Vite
+# AI Event Planner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An intelligent web application that helps you plan events effortlessly — powered by AI-generated themes, schedules, and ideas based on your inputs.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Features
 
-## Expanding the ESLint configuration
+- 🤖 AI-generated event planning suggestions
+- 🗓️ Customized schedules for different event types
+- 🎨 Theme and decoration ideas
+- 🗺️ Interactive map integration via Leaflet.js
+- ⚡ Fast, responsive, and user-friendly interface
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tech Stack
+
+| Layer      | Technology              |
+|------------|-------------------------|
+| Frontend   | HTML, CSS, JavaScript   |
+| AI API     | Google Gemini API       |
+| Maps       | Leaflet.js + OpenStreetMap (no API key required) |
+| Deployment | Netlify                 |
+
+---
+
+## Getting Started
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/your-username/ai-event-planner.git
+cd ai-event-planner
+```
+
+### 2. Set up environment variables
+
+Create a `.env` file in the root directory:
+```env
+GEMINI_API_KEY=your_gemini_api_key_here
+```
+
+> ⚠️ **Important:** Add `.env` to your `.gitignore` to keep your API key out of version control.
+
+### 3. Run the project
+
+Open `index.html` in your browser, or deploy to Netlify.
+
+---
+
+## 🗺️ Map Setup (Leaflet.js)
+
+This project uses **Leaflet.js**, which is free and open-source — **no API key needed**.
+
+Add these to your HTML:
+```html
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+```
+
+The map tiles are served by **OpenStreetMap**, also free and no key required.
+
+---
+
+##  Usage
+
+1. Enter your event details — type, date, budget, and preferences
+2. Click **Generate Plan**
+3. Receive an AI-powered event plan with themes and schedule
+4. View your previously planned events in the event list
+
+##  Security
+
+- API keys are stored using environment variables
+- `.env` is excluded from version control via `.gitignore`
+
+
+
+## 📄 License
+
+This project is open-source under the [MIT License](LICENSE).
+
+
